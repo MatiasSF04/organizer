@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background: url('https://images.rawpixel.com/image_social_landscape/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L2ZsNDQzNDE2ODYxNTUtaW1hZ2Uta3R4cmF6M20uanBn.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+.header {
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    background: #6d6c87;
+    padding: 20px;
+    font-size: 3.5em;
+    font-weight: bold;
+    color: white;
+}
+.progress-container {
+    /* margin: 51px auto; */
+    width: 80%;
+    height: 30px;
+    margin-top: 5%;
+    left: 10%;
+    background: #6ce5e8;
+    border-radius: 20px;
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    justify-content: start;
+}
+.progress-bar {
+    z-index: 1;
+    height: 100%;
+    width: 0;
+    background: #41b8d5;
+    transition: width 0.3s;
+}
+#progress-text {
+    z-index: 1;
+    gap: 0;
+    margin: 1em 0;
+    position: absolute;
+    margin-top: 5%;
+    right: 2%;
+    font-size: 1.5em;
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+}
+.weeks-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px 0;
+    width: 80%;
+    height: 75%;
+    scrollbar-width: none;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.weeks {
+    display: flex;
+    padding-left: 0;
+    gap: 50px;
+    width: fit-content;
+}
+.week {
+    background: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 10px;
+    width: 280px;
+    height: 450px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+    display: inline-block;
+}
+.week h2 {
+    background: gold;
+    margin: 0;
+    padding: 25px 0 25px 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 32px;
+    color: black;
+}
+.task {
+    display: block;
+    margin: -5px 0 0 0;
+    padding: 15px 5px 15px 5px;
+    background: rgb(146, 146, 146);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+.task input {
+    margin-right: 15px;
+}
