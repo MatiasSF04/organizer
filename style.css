@@ -29,7 +29,7 @@ body {
     background: #6ce5e8;
     border-radius: 20px;
     overflow: hidden;
-    position: fixed;
+    position: absolute;
     display: flex;
     justify-content: start;
 }
