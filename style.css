@@ -11,6 +11,17 @@ body {
     color: white;
     text-align: center;
 }
+.blur-bg {
+    display: block;
+    justify-items: center;
+    width: 80%;
+    position: fixed;
+    margin: 10%;
+    /* padding: 10%; */
+    box-shadow: white;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
 .header {
     font-family: "Bree Serif", serif;
     font-weight: 400;
@@ -55,12 +66,10 @@ body {
 .weeks-container {
     overflow-x: auto;
     white-space: nowrap;
-    padding: 20px 0;
-    width: 80%;
     height: 75%;
     scrollbar-width: none;
-    margin-left: 10%;
-    margin-top: 10%;
+    margin: 3%;
+    border-radius: 10px;
 }
 .weeks {
     display: flex;
@@ -150,4 +159,13 @@ body {
     align-items: center;
     justify-content: center;
     gap: 10px;
+}
+
+@media (max-width: 720px) {
+    .week {/* 
+        display: flex;
+        position: fixed;
+        top: 50%;
+         */
+    }
 }
